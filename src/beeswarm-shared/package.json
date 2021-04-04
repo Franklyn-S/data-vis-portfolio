@@ -1,0 +1,14 @@
+{
+  "name": "91051e8c98a36f59",
+  "main": "91051e8c98a36f59@594.js",
+  "version": "594.0.0",
+  "homepage": "https://observablehq.com/d/91051e8c98a36f59",
+  "author": {
+    "name": "Gustavo01",
+    "url": "https://observablehq.com/@gustavo-sousa"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

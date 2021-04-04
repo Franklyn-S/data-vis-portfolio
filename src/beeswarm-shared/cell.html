@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Beeswarm shared</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+
+<body>
+  <div id="chartOrderedByContinent"> </div>
+  <script type="module">
+
+    import define from "./index.js";
+    import { Runtime, Library, Inspector } from "./runtime.js";
+
+    const runtime = new Runtime();
+    const main = runtime.module(define, name => {
+      if (name === "chartOrderedByContinent") {
+        return new Inspector(document.getElementById("chartOrderedByContinent"));
+      }
+    });
+
+  </script>
