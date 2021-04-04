@@ -1,0 +1,14 @@
+{
+  "name": "@franklyn-s/covid-19-vaccination-in-the-world-bubble-chart",
+  "main": "90f0859e49cde23b@443.js",
+  "version": "443.0.0",
+  "homepage": "https://observablehq.com/@franklyn-s/covid-19-vaccination-in-the-world-bubble-chart",
+  "author": {
+    "name": "Franklyn Seabra",
+    "url": "https://observablehq.com/@franklyn-s"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

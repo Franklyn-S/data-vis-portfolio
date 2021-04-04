@@ -1,0 +1,14 @@
+{
+  "name": "@franklyn-s/similar-song-network",
+  "main": "90675916158cca12@114.js",
+  "version": "114.0.0",
+  "homepage": "https://observablehq.com/@franklyn-s/similar-song-network",
+  "author": {
+    "name": "Franklyn Seabra",
+    "url": "https://observablehq.com/@franklyn-s"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

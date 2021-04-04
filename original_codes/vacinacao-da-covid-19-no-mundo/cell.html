@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Vacinação da Covid-19 no mundo</title>
+  <link rel="stylesheet" type="text/css" href="./inspector.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+  <style>
+    #mapid {
+      width: 750px;
+      height: 590px;
+    }
+
+    .info {
+      padding: 6px 8px;
+      font: 14px/16px Arial, Helvetica, sans-serif;
+      background: white;
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+
+    .info h4 {
+      margin: 0 0 5px;
+      color: #777;
+    }
+
+    .legend {
+      text-align: left;
+      line-height: 28px;
+      color: #555;
+    }
+
+    .legend i {
+      width: 18px;
+      height: 18px;
+      float: left;
+      margin-right: 8px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <h1>Vacinação da Covid-19 ao redor do mundo!</h1>
+  <p>Dados coletados em: 16/03/2021</p>
+  <a href="https://www.kaggle.com/gpreda/covid-world-vaccination-progress" target="_blank" >Dados</a>
+
+    <div id="buildvis"> </div>
+    <div id="map"> </div>
+    <div id="geojson"> </div>
+    <div id="legend"> </div>
+    <script type="module">
+
+      import define from "./index.js";
+      import { Runtime, Library, Inspector } from "./runtime.js";
+
+      const runtime = new Runtime();
+      const main = runtime.module(define, name => {
+        if (name === "buildvis") {
+          return new Inspector(document.getElementById("buildvis"));
+        } else if (name === "map") {
+          return new Inspector(document.getElementById("map"));
+        } else if (name === "geojson") {
+          return new Inspector(document.getElementById("geojson"));
+        } else if (name === "legend") {
+          return new Inspector(document.getElementById("legend"));
+        }
+      });
+
+    </script>
+</body>
+

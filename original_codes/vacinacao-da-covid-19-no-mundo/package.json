@@ -1,0 +1,14 @@
+{
+  "name": "@franklyn-s/vacinacao-da-covid-19-no-mundo",
+  "main": "09c7f3fb427a8d87@294.js",
+  "version": "294.0.0",
+  "homepage": "https://observablehq.com/@franklyn-s/vacinacao-da-covid-19-no-mundo",
+  "author": {
+    "name": "Franklyn Seabra",
+    "url": "https://observablehq.com/@franklyn-s"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

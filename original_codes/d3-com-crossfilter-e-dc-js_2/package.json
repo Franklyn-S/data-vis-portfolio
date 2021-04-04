@@ -1,0 +1,14 @@
+{
+  "name": "@franklyn-s/d3-com-crossfilter-e-dc-js/2",
+  "main": "459ab85d710e78aa@846.js",
+  "version": "846.0.0",
+  "homepage": "https://observablehq.com/@franklyn-s/d3-com-crossfilter-e-dc-js/2",
+  "author": {
+    "name": "Franklyn Seabra",
+    "url": "https://observablehq.com/@franklyn-s"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

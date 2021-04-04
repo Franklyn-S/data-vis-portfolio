@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+
+  <meta charset="utf-8">
+  <title>Covid-19 vaccination in the World ~ Bubble Chart</title>
+  <link rel="stylesheet" type="text/css" href="./inspector.css">
+
+</head>
+
+<body>
+  <h1>Vacinação da Covid-19 ao redor do mundo!</h1>
+  <p>Data dos dados: 16/03/2021</p>
+  <a href="https://www.kaggle.com/gpreda/covid-world-vaccination-progress" target="_blank">Dados</a>
+  <div id="chart"> </div>
+  <script type="module">
+    
+    import define from "./index.js";
+    import { Runtime, Library, Inspector } from "./runtime.js";
+
+    const runtime = new Runtime();
+    const main = runtime.module(define, name => {
+      if (name === "chart") {
+        return new Inspector(document.getElementById("chart"));
+      }
+    });
+
+  </script>
